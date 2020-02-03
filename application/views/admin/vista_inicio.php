@@ -44,7 +44,9 @@
         </div>
         <div class="col-md-6">
             <div class="tile">
-                <h1>MANTENIMIENTO</h1>
+            <div class="embed-responsive embed-responsive-16by1" id="contenidorcoluma" style="height: 600px">
+                    <div class="embed-responsive-item" id="reca_x_punto"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -60,6 +62,7 @@
 <!-- <script src="asset/template/js/highcharts/highcharts-more.js"></script>-->
 <script src="<?php echo base_url();?>asset/template/js/highcharts/exporting.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/highcharts/export-data.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/recaudacion/rptrecaudacion.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,4 @@
-<script>
-Highcharts.chart('container', {
+Highcharts.chart('reca_x_punto', {
     chart: {
         type: 'column'
     },
@@ -41,26 +40,23 @@ Highcharts.chart('container', {
         pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>S/. {point.y:.2f}'
     },
 
-    series: [
-        {
+    series: [{
             name: "REPORTE DEL CAMPAÑA GAT",
             colorByPoint: true,
-            data: [
-                {
+            data: [{
                     name: "SECTOROR UNO",
                     y: 62.74,
                     drilldown: "SECTOROR UNO",
-                    color:"#FF5533"
+                    color: "#FF5533"
                 },
                 {
                     name: "SECTOROR DOS",
                     y: 10.57,
                     drilldown: "SECTOR DOS",
-                    color:"#FFFF33"
+                    color: "#FFFF33"
                 }
             ]
         }
-         
-        ]   
+
+    ]
 });
-</script>
