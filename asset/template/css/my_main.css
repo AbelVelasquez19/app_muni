@@ -1,0 +1,318 @@
+.titulo_registro {
+    color: #fff;
+    font-family: 'Archivo Narrow';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 7px;
+    border: rgb(75, 70, 70) 1.5px solid;
+}
+
+.txt_buscar_codigo {
+    height: 30px;
+    width: 15%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.txt_buscar_dni {
+    height: 30px;
+    width: 15%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.txt_buscar_nombre {
+    height: 30px;
+    width: 30%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.titulo_contri {
+    color: #fff;
+    background-color: rgb(128, 125, 120);
+    font-family: 'Archivo Narrow';
+    font-style: normal;
+    border: rgb(75, 70, 70) 1.5px solid;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.titulo_relacionado {
+    color: #fff;
+    background-color: rgb(128, 125, 120);
+    font-family: 'Archivo Narrow';
+    font-style: normal;
+    border: rgb(75, 70, 70) 1.5px solid;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.contenido_contri {
+    border-bottom: rgb(75, 70, 70) 1.5px solid;
+    border-left: rgb(75, 70, 70) 1.5px solid;
+    border-right: rgb(75, 70, 70) 1.5px solid;
+    padding-left: 22px;
+    padding-right: 22px;
+    font-family: 'Rakkas';
+    font-style: normal;
+    font-weight: 400;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding-bottom: 10px;
+}
+
+.contenido_relacionado {
+    border-bottom: rgb(75, 70, 70) 1.5px solid;
+    border-left: rgb(75, 70, 70) 1.5px solid;
+    border-right: rgb(75, 70, 70) 1.5px solid;
+    padding-left: 30px;
+    padding-right: 22px;
+    font-family: 'Rakkas';
+    font-style: normal;
+    font-weight: 400;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.form-control1 {
+    display: block;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border-radius: 5px;
+    border: 1.5px rgb(0, 128, 0) solid;
+    margin-top: -9px;
+    color: rgb(42, 59, 153);
+}
+
+.form-control2 {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #FFF;
+    background-clip: padding-box;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    margin-top: -9px;
+    color: rgb(42, 59, 153);
+}
+
+.contenido_contri span {
+    font-size: 12px;
+}
+
+.animated-radio-button label {
+    display: inline-block;
+    margin-bottom: -5px;
+}
+
+.animated-radio-button input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.animated-radio-button input[type="radio"]+.label-text {
+    cursor: pointer !important;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.animated-radio-button input[type="radio"]+.label-text:before {
+    content: "";
+    font-family: "FontAwesome";
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    width: 1em;
+    display: inline-block;
+    margin-right: 2px;
+    vertical-align: -2px;
+}
+
+.contenido_rela span {
+    font-size: 12px;
+}
+
+.row_servicios {
+    margin-left: 10px;
+}
+
+.column_servicios {
+    height: 90px;
+}
+
+.mause_pointer {
+    cursor: pointer;
+    border-radius: 20%;
+}
+
+.servicios {
+    height: 90px;
+}
+
+.servicios p {
+    margin-top: -12px;
+}
+
+.form-check-input {
+    /* display: none;*/
+}
+
+.titulo_mascota {
+    background-color: rgb(97, 95, 95);
+    color: #fff;
+    font-family: 'Rakkas';
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.contenido_mascota {
+    border: 2px rgb(75, 78, 75) solid;
+    padding: 10px;
+}
+
+.txt_buscar_codigo_mas {
+    height: 30px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.txt_buscar_dni_mas {
+    height: 30px;
+    width: 20%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.txt_buscar_nombre_mas {
+    height: 30px;
+    width: 58%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1.5px green solid;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+hr {
+    margin-top: 3px;
+    border: 1px rgb(151, 146, 146) solid;
+}
+
+.formulario_mascota {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.formulario_mascota span {
+    font-size: 12px;
+}
+
+.txt_observacion_mascota {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.imgan_mascota {
+    width: 100%;
+    height: 93%;
+    margin-top: 10px;
+    border: 1.5px rgb(60, 143, 21) solid;
+    border-radius: 5px;
+}
+
+#FormMascota {
+    display: none;
+}
+
+#FormJuridica {
+    display: none;
+}
+
+#FormFisioterapia {
+    display: none;
+}
+
+#FormOdontologia {
+    display: none;
+}
+
+#FormCaritasPintadas {
+    display: none;
+}
+
+#FormCorteCabello {
+    display: none;
+}
+
+#FormManicure {
+    display: none;
+}
+
+.tile1 {
+    position: relative;
+    background: #e5e5e5;
+    border-radius: 3px;
+    padding: 6px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media print {
+    .tile1 {
+        border: 1px solid #ddd;
+    }
+}

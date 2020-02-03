@@ -1,0 +1,601 @@
+.wrap{
+    width: 100%;
+    max-width: 1000px;
+}
+.widget{
+    width: 100%;
+    margin: 1px;
+}
+.widget p{
+    display: inline-block;
+    line-height: 3px;
+}
+.fecha{
+    font-family: Oswald, Arial;
+    font-weight: bold;
+    text-align: center;
+    font-size: 21px;
+    background: rgba(0, 0, 0, 0.863);
+    color:#fff;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.reloj{
+    font-family: 'Black Ops One', cursive;
+    width: 100%;
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.863);
+    color:#fff;
+    padding-top: 0.5px;
+       
+}
+
+.reloj .caja-segundos{
+    display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm{
+    font-size: 29px;
+    display: block;
+}
+.reloj .segundos{
+    padding: 3px;
+}
+
+.header-css{
+    background: -webkit-linear-gradient(top,#f54009f8,#940317,#2e0301);
+    background: -moz-linear-gradient(top,#f54009f8,#940317,#2e0301);
+    background: -o-linear-gradient(top,#f54009f8,#940317,#2e0301);
+    color:#fff;
+    text-align: center;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 30px;
+}
+
+.footer-css{
+    background: -webkit-linear-gradient(top,#940317,#2e0301);
+    background: -moz-linear-gradient(top,#940317,#2e0301);
+    background: -moz-linear-gradient(top,#940317,#2e0301);
+    justify-content: center;
+    padding-bottom:0px;
+    height: 50px;
+}
+.evento{
+    width: 100%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.863);
+    padding-left: 5px;
+    padding-top: 11px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.horario1{  
+    width: 100%;
+    margin-top: -14px;
+    padding-left: 10px;
+    padding-top:0px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+}
+
+
+.horario1 .label-entrada_desabilitado{
+    width: 137px;
+    height: 100px;
+    color: #fff;
+    background: -webkit-linear-gradient(top,#c0c4c0f8,#434443,#1f1e1e);
+    background: -webkit-linear-gradient(top,#c0c4c0f8,#434443,#1f1e1e);
+    background: -webkit-linear-gradient(top,#c0c4c0f8,#434443,#1f1e1e);
+    border-radius: 5px;
+    margin: 14px;
+    font-family: 'Rakkas', cursive;
+    font-size: 18px;
+    line-height: 95px;
+    border:#fff 2px solid;
+    cursor:not-allowed;
+}
+
+.horario1 .label-salida_desabilitado{
+    width: 137px;
+    height: 100px;
+    color: #fff;
+    background: -webkit-linear-gradient(top,#c0c4c0f8,#434443,#1f1e1e);
+    background: -webkit-linear-gradient(top,#c0c4c0f8,#434443,#1f1e1e);
+    background: -webkit-linear-gradient(top,#c0c4c0f8,#434443,#1f1e1e);
+    border-radius: 5px;
+    margin: 14px;
+    font-family: 'Rakkas', cursive;
+    font-size: 18px;
+    line-height: 95px;
+    border:#fff 2px solid;
+    cursor:not-allowed;
+}
+
+/* css para butones*/
+.horario1 .label-entrada{
+    width: 130px;
+    height: 100px;
+    color: #fff;
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#2e0301);
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#2e0301);
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#2e0301);
+    border-radius: 5px;
+    margin: 12px;
+    font-family: 'Rakkas', cursive;
+    font-size: 28px;
+    line-height: 95px;
+    border:#fff 2px solid;
+    cursor:pointer;
+}
+.horario1 .label-salida{
+    width: 130px;
+    height: 100px;
+    color: #fff;
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#2e0301);
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#2e0301);
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#2e0301);
+    border-radius: 5px;
+    margin: 12px;
+    float: right;
+    font-family: 'Rakkas', cursive;
+    font-size: 28px;
+    line-height: 95px;
+    border:#fff 2px solid;
+    cursor:pointer;
+}
+.text-mensaje-seleccion{
+    color:#fff;
+    font-family: Oswald, Arial;
+    font-size: 20px;
+    font-weight: bold;
+    margin:0px;
+    padding: opx;
+}
+.text-entrada{
+    display: none;
+}
+.text-salida{
+    display: none;
+}
+.text-entrada-refri{
+    display: none;
+}
+.text-salida-refri{
+    display: none;
+}
+
+.horario1 .label-entrada:hover{
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+}
+.horario1 .label-salida:hover{
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+}
+.horario2 .label-entrada-refri:hover{
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+}
+.horario2 .label-salida-refri:hover{
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+    background: -webkit-linear-gradient(top,#f0a608f8,#fac021,#5f0703);
+}
+.Datos_persnales{
+    background: rgba(0, 0, 0, 0.863);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 3px;
+}
+.Datos_persnales .form-group-text{
+    color:#FFF;
+    font-family: 'Black Ops One', cursive;
+    font-size: 20px;
+}
+
+.foto-css{
+    width: 100%;
+    height: 49%;
+    justify-content: center;
+    padding-left: 10px;
+    padding-top: 0px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.foto-css .img-css{
+    width: 70%;
+    border-radius: 5px;
+    border:rgb(211, 165, 14) 3px solid;
+}
+
+/* PARPADEAR TEXTOS */
+.texto_mensaje {
+    font-size:16px;
+    font-family: 'Rakkas', cursive;
+    font-weight:bold;
+    color:#FFF;
+    /*-webkit-text-stroke: 0.2px color*/
+    letter-spacing: 5px;
+    text-transform:uppercase;
+  }
+  .mensajeregistro {
+    animation-name: parpadeo;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+  /* table personalizado 1*/
+  .div-table_1{
+      border:2px #FFF solid;
+      background: #000000;
+      border-radius: 5px;
+      padding: 0px;
+      padding-right: 10px;
+      height: 100%;
+  }
+
+ /* table personalizado 2*/
+  .div-table-2{
+    border:2px #FFF solid;
+    background: #000000;
+    border-radius: 5px;
+    padding: 0px;
+    padding-right: 10px;
+    height: 100%;
+}
+
+.table-personalizado1{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.table-personalizado1 tr th{
+    border:#FFF 2px solid;
+    color: #FFF;
+    padding:3px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Oswald, Arial;
+    letter-spacing:2px;
+
+}
+
+.table-personalizado1 tr td{
+    border:#FFF 2px solid;
+    color: #FFF;
+    padding:1px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.table-personalizado2{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.table-personalizado2 tr th{
+    border:#FFF 2px solid;
+    color: #FFF;
+    padding:3px;
+    text-align: center;
+    font-size: 14px;
+    font-family: Oswald, Arial;
+    letter-spacing:2px;
+
+}
+
+.table-personalizado2 tr td{
+    border:#FFF 2px solid;
+    color: #FFF;
+    padding:1px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.table-personalizado2 .tr-hover:hover{
+    background: #ca0808;
+    cursor: pointer;
+}
+.table-personalizado1 .tr-hover:hover{
+    background: #ca0808;
+    cursor: pointer;
+}
+
+/* titulo asistencia codeignither */
+.titulo_asistencia{
+    text-align: center;
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#690803);
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#690803);
+    background: -webkit-linear-gradient(top,#d33607f8,#7e0313,#690803);
+    color: #FFF;
+    font-family: 'Saira Stencil One', cursive;
+    font-size: 20px;
+    
+}
+.header_asistencia{
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Rakkas', cursive;
+}
+.contenido_asistencia{    
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px #000000f8 solid;
+    padding-top: 5px;
+}
+
+.card_asistencia{
+    border:1px #000000 solid;
+    margin-bottom: 5px;
+    padding-right: 0px;
+}
+.card_asistencia{
+    cursor: pointer;
+}
+.header_faltas{
+    background: #000000;
+    color: #fff;
+    text-align: center;
+    font-family: 'Rakkas', cursive;
+}
+.contenido_faltas{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 3px #000000f8 solid;
+    padding-top: 5px;
+}
+.card_faltas{
+    border:1px #000000 solid;
+    margin-bottom: 5px;
+    padding-right: 0px;
+}
+.card_faltas:hover{
+    cursor: pointer;
+}
+.icon_asistencia{
+    position: absolute;
+    color:rgb(26, 107, 230);    
+}
+
+.icon_faltas{
+    position: absolute;
+    color:rgb(230, 26, 26)  ;   
+}
+
+/* .................... ...........css para diseño de recaudacion-.................*/
+
+.titulo{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    text-align: center;
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 5px;
+    padding: -20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tabla{
+    margin: 5px;
+   padding-bottom:5px; 
+}
+.txt_buscar_reca{
+    float: right;
+    height: 35px;
+    margin-top:2px;
+    width: 250px;
+    margin-right:2px;
+    border-radius: 5px;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: bold;
+    border: #494d49 2px solid;
+}
+.btn_nuevo{
+    border:#0d9c89 2px solid;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;  
+    cursor: pointer; 
+    font-family: 'Black Ops One';
+    font-style: normal; 
+}
+.btn_nuevo:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background: #047465;
+    color: #fff;
+    border: #08504a 2px solid;
+}
+.btn_excel{
+    border:#0d9c89 2px solid;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Black Ops One';
+    font-style: normal;
+    cursor: pointer;     
+}
+.btn_excel:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background: #047465;
+    color: #fff;
+    border: #08504a 2px solid;
+}
+
+.btn_pdf{
+    border:#0d9c89 2px solid;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Black Ops One';
+    font-style: normal;     
+}
+.btn_pdf:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background: #047465;
+    color: #fff;
+    border: #08504a 2px solid;
+}
+
+.txt_buscar_reca:hover{
+    border: #e7b50f 2px solid;
+}
+.table_reca{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.table_reca tr th{
+    border:2px #6d0606 solid;
+    background: #b61a12;
+    color: #fff;
+    font-size: 14px;
+    padding: 3px;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Saira Stencil One';
+    letter-spacing: 1px;
+    font-style: normal;  
+}
+
+.table_reca tr td{
+    border:2px #6d0606 solid;
+    font-size: 14px;
+    padding-top: 0px;
+    padding-left: 3px;
+    font-weight: 400;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-style: normal;
+}
+
+.table_reca tr:hover{
+    background: #f8c596;
+    cursor: pointer;
+    color: rgb(179, 24, 24);
+}
+
+.btn_editar_reca{
+    background: #0c9c90;
+    color: #ffffff;
+    border: #08504a 1px solid;
+    width: 30px;
+    height: 25px;
+    margin-top:-10px;
+}
+.btn_editar_reca:hover{
+    background: #0f534e;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn_estado_reca{
+    background: #dd1f06;
+    color: #fff;
+    border: #5a0505 1px solid;
+    width: 30px;
+    height: 25px;
+    margin-top:-10px;
+}
+.btn_estado_reca:hover{
+    background: #8f1606;
+    color: #fff;
+    cursor: pointer; 
+}
+
+.Cod_recaudacion{
+   text-align: center; 
+}
+.Sc1_recaudacion{
+    text-align: center; 
+}
+
+.btn_estado_activo_reca{
+    background: #02911a;
+    color: #fff;
+    border: #023104 1px solid;
+    width: 30px;
+    height: 25px;
+    margin-top:-10px;
+}
+
+.pagination_recaudacion{
+    margin-top: 5px;
+    padding-top: 10px;
+    
+}
+
+.footer-css-recaudacion{
+    background: -webkit-linear-gradient(top,#940317,#2e0301);
+    background: -moz-linear-gradient(top,#940317,#2e0301);
+    background: -moz-linear-gradient(top,#940317,#2e0301);
+    padding-bottom:10px;
+    height: 50px;
+}
+.btn-cerrar{
+    border:1px #fff solid;
+
+}
+.btn-guardar{
+    border:1px #fff solid;
+}
+
+.insertar-recaudacion{
+    border:1px red solid;
+    padding: 25px;
+}
+
+.btn-actualizar{
+    border:1px #fff solid;
+}
+
