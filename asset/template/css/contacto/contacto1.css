@@ -1,0 +1,60 @@
+.buscar_contribuyente {
+    border: 2px rgb(141, 7, 7) solid;
+    border-radius: 5px;
+}
+
+.label-text {
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+}
+
+.text-text {
+    font-family: 'Rakkas';
+    font-style: normal;
+    margin-top: -16px;
+}
+
+.col-md-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.3333333333%;
+    flex: 0 0 59.333333%;
+    max-width: 57.333333%;
+}
+
+.table-personalizado {
+    width: 100%;
+    border: 2px #A21F12 solid;
+}
+
+.titulo-table {
+    background: #A21F12;
+    color: #fff;
+}
+
+.btn-nuevo {
+    width: 70px;
+    height: 35px;
+    border-radius: 5px;
+    background: #A21F12;
+    color: #fff;
+    font-family: 'Black Ops One';
+    font-style: normal;
+}
+
+.btn-editar {
+    width: 35px;
+    height: 28px;
+    border-radius: 5px;
+    background: #A21F12;
+    color: #fff;
+}
+
+tr th {
+    font-family: 'Saira Stencil One';
+    letter-spacing: 2px;
+}
+
+tr td {
+    font-family: 'Rakkas';
+    font-style: normal;
+}
