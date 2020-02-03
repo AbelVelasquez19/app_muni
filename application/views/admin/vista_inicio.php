@@ -45,7 +45,7 @@
         <div class="col-md-6">
             <div class="tile">
             <div class="embed-responsive embed-responsive-16by1" id="contenidorcoluma" style="height: 600px">
-                    <div class="embed-responsive-item" id="reca_x_punto"></div>
+                    <div class="embed-responsive-item" id="reca_x_punto1"></div>
                 </div>
             </div>
         </div>
