@@ -36,4 +36,9 @@ class Contro_rptreca extends CI_Controller {
     }
 
 
+    // controlador de funcion Reporte_recaudacion de campaña gat
+    public function Reporte_recaudacion(){
+        $resultado=$this->Model_reporte->Reporte_recaudacion();
+        echo json_encode($resultado);
+    }
 }

@@ -5,10 +5,10 @@ function reca_x_punto() {
             renderTo: 'reca_x_punto',
         },
         title: {
-            text: 'fecha'
+            text: 'RECAUDACÓN POR DIA - CAMPAÑA GAT'
         },
         subtitle: {
-            text: 'subtitulo'
+            text: ''
         },
         accessibility: {
             announceNewData: {
@@ -20,7 +20,7 @@ function reca_x_punto() {
         },
         yAxis: {
             title: {
-                text: 'mensaje izquierd'
+                text: 'recaudación 2020'
             }
 
         },
@@ -45,28 +45,43 @@ function reca_x_punto() {
         series: [{
                 name: "REPORTE DEL CAMPAÑA GAT",
                 colorByPoint: true,
-                data: [{
-                        name: "SECTOROR UNO",
-                        y: 62.74,
-                        drilldown: "SECTOROR UNO",
-                        color: "#FF5533"
-                    },
-                    {
-                        name: "SECTOROR DOS",
-                        y: 10.57,
-                        drilldown: "SECTOR DOS",
-                        color: "#FFFF33"
-                    }
-                ]
+                data: []
             }
 
         ]
 
 
     }
+    var urlphp = $("#url1").text();
+    $.post("" + urlphp + "reportes/Contro_rptreca/Reporte_recaudacion", function(data) {
+        var datos = JSON.parse(data);
+        for (var index = 0; index < datos.length; index++) {
+            var objeto = {
+                name: datos[index].Pt1_recaudacion,
+                y: parseFloat(datos[index].Sc1_recaudacion),
+                color: "#FF9633"
+            };
+            var objeto1 = {
+                name: datos[index].Pt2_recaudacion,
+                y: parseFloat(datos[index].Sc2_recaudacion),
+                color: "#8DFF33 "
+            };
+            var objeto2 = {
+                text: 'Total S/. ' + datos[index].TOTAL
+            };
+            option.series[0].data.push(objeto);
+            option.series[0].data.push(objeto1);
+            option.subtitle = objeto2;
+        }
+
+        chart = new Highcharts.Chart(option);
+    });
+
+
 }
 
 function init() {
     reca_x_punto();
 };
+
 init();

@@ -42,6 +42,21 @@ class Model_reporte extends CI_Model {
             }else{
                 return false;
             }
-        }   
+        }
+        
+        // reporte de recaudacion por dos puntos
+        public function Reporte_recaudacion(){
+            $this->db->select("Pt1_recaudacion,Sc1_recaudacion,Pt2_recaudacion,Sc2_recaudacion,SUM(Sc1_recaudacion)+SUM(Sc2_recaudacion)AS TOTAL");
+            $this->db->from("tb_recaudacion");
+            $this->db->where("fec_recaudacion ='2020-01-25'");
+            $this->db->where("Est_recaudacion = 1 ");
+            $this->db->group_by("fec_recaudacion");
+            $query = $this->db->get();
+            if($query->num_rows()>0){
+                return $query->result();
+            }else{
+                return false;
+            }
+        }
 	
 }

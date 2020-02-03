@@ -30,6 +30,10 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
 </head>
+<?php
+    $url= base_url();
+    echo '<p id="url1" style="display:none">'.$url.'</p>';
+?>
 <!-- se incluyo body y header en archivo views/admin/layouts/header.php-->
 <!-- Sidebar menu-->
 <!-- aside en archivo views/admin/layouts/header.php-->
