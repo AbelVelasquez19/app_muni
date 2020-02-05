@@ -133,6 +133,9 @@ $("#btn-titular").click(function() {
 });
 
 $("#btn-guardar-contacto").click(function() {
+    setTimeout(function() {
+        $("#mensajeregistro").fadeIn();
+    }, 200);
     var urlphp = $("#url1").text();
     var CODIGO = $("#codigo").val();
     var TELEFONO = $("#txttelefono").val();
@@ -158,6 +161,10 @@ $("#btn-guardar-contacto").click(function() {
             $("#txttelefono").val("")
             $("#txtcelular").val("")
             $("#txtcorreo").val("");
+
+            setTimeout(function() {
+                $("#mensajeregistro").fadeOut(1000);
+            }, 1000);
 
         }
     });
