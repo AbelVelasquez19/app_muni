@@ -31,6 +31,21 @@ txt_buscar_codigo.addEventListener("keyup", function(event) {
     }
 });
 
+
+var buscardni = document.getElementById("txt_buscardni");
+buscardni.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        var txtdni = $("#txt_buscardni").val();
+        alert(txtdni)
+        var urlphp = $("#url1").text();
+        $.post("" + urlphp + "gestion/Contro_contacto/BuscarcontactoDni", { txtdni: txtdni }, function(response) {
+            var dato = JSON.parse(response);
+            console.log(dato);
+        });
+    }
+});
+
 function llenartablecontacto() {
     var txtcodigo = $("#codigo").val();
     var urlphp = $("#url1").text();
@@ -180,3 +195,51 @@ $("#btn-cerrar_actualizar").click(function() {
     $('#ModalActuaizar').modal('hide');
     $("#mensajeactualizar").html("");
 })
+
+window.addEventListener("load", function() {
+    var el = document.getElementById("txttelefono_actualizar");
+    el.addEventListener("keypress", soloNumeros, false);
+    el.focus();
+});
+
+window.addEventListener("load", function() {
+    var el = document.getElementById("txtcelular_actualizar");
+    el.addEventListener("keypress", soloNumeros, false);
+    el.focus();
+});
+
+window.addEventListener("load", function() {
+    var el = document.getElementById("txttelefono");
+    el.addEventListener("keypress", soloNumeros, false);
+    el.focus();
+});
+
+window.addEventListener("load", function() {
+    var el = document.getElementById("txtcelular");
+    el.addEventListener("keypress", soloNumeros, false);
+    el.focus();
+});
+
+window.addEventListener("load", function() {
+    var el = document.getElementById("buscarcodigo");
+    el.addEventListener("keypress", soloNumeros, false);
+    el.focus();
+});
+
+window.addEventListener("load", function() {
+    var el = document.getElementById("txt_buscardni");
+    el.addEventListener("keypress", soloNumeros, false);
+    el.focus();
+});
+
+function soloNumeros(e) {
+    var key = window.event ? e.which : e.keyCode;
+    if (key < 48 || key > 57) {
+        e.preventDefault();
+    }
+}
+
+$("#btn-titular_actualizar").click(function() {
+    var nombre = $("#nombre").val();
+    $("#txtrepresentante_actualizar").val(nombre);
+});

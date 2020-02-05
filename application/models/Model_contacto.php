@@ -26,6 +26,18 @@ class Model_contacto extends CI_Model {
             return false;
         }
     }
+    
+    public function Buscarcontactodni($dni){
+        $this->db->select('p.CODIGO,p.NOMBRE,p.DOMICILIO_FISCAL');
+        $this->db->from('tb_contribuyentes p');
+        $this->db->where('p.NRODOCUM',$dni);
+        $query = $this->db->get();
+        if($query->num_rows() > 0){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
 
     public function RegistrarContacto($data){
         $this->db->insert("tb_contacto_6",$data);
