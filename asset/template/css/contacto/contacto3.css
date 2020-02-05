@@ -58,3 +58,49 @@ tr td {
     font-family: 'Rakkas';
     font-style: normal;
 }
+
+
+/* css para modal de registro de contacto */
+
+.modal-titutlo {
+    background-color: rgb(153, 17, 17);
+    color: #fff;
+    font-family: 'Saira Stencil One';
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+.modal-foote {
+    background-color: rgb(153, 17, 17);
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.btn-cerrar {
+    height: 40px;
+    text-align: center;
+    background-color: rgb(153, 17, 17);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px #fff solid;
+}
+
+.btn-guardar {
+    height: 40px;
+    text-align: center;
+    background-color: rgb(153, 17, 17);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px #fff solid;
+}
+
+.btn-titular {
+    background: rgb(153, 17, 17);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px #fff solid;
+    height: 37px;
+}
