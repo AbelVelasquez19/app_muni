@@ -37,11 +37,30 @@ buscardni.addEventListener("keyup", function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         var txtdni = $("#txt_buscardni").val();
-        alert(txtdni)
         var urlphp = $("#url1").text();
-        $.post("" + urlphp + "gestion/Contro_contacto/BuscarcontactoDni", { txtdni: txtdni }, function(response) {
-            var dato = JSON.parse(response);
-            console.log(dato);
+        $.post("" + urlphp + "gestion/Contro_contacto/BuscarDni", { txtdni: txtdni }, function(response) {
+            var datos = JSON.parse(response);
+            var data = datos.BuscarDni;
+            if (data) {
+                var codigo = data[0].CODIGO;
+                nuevacodigo = codigo.trim();
+                $("#codigo").val(nuevacodigo);
+
+                var nombre = data[0].NOMBRE;
+                nuevanombre = nombre.trim();
+                $("#nombre").val(nuevanombre);
+
+                var dni = data[0].DOMICILIO_FISCAL;
+                nuevadni = dni.trim();
+                $("#direccion").val(nuevadni);
+                llenartablecontacto();
+            } else {
+                Swal.fire('<span>Código de contribuyente no encontrado</span>');
+                $("#codigo").val("");
+                $("#nombre").val("");
+                $("#direccion").val("");
+            }
+
         });
     }
 });
@@ -239,7 +258,7 @@ function soloNumeros(e) {
     }
 }
 
-$("#btn-titular_actualizar").click(function() {
+$("#btn-titular-actualizar").click(function() {
     var nombre = $("#nombre").val();
     $("#txtrepresentante_actualizar").val(nombre);
 });

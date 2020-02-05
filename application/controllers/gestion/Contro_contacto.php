@@ -25,6 +25,14 @@ class Contro_contacto extends CI_Controller {
 		echo json_encode($data);
 	}
 
+	public function BuscarDni(){
+        $dni = $this->input->post('txtdni');
+        $data = array(
+            "BuscarDni"=>$this->Model_contacto->BuscarDni($dni),
+        );
+		echo json_encode($data);
+	}
+
 	public function Buscarcontacto(){
     	$codigo = str_pad($this->input->post('txtcodigo'),7,"0",STR_PAD_LEFT);
         $data = array(

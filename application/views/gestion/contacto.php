@@ -44,16 +44,17 @@
     <div class="row">
         <div class="col-md-5">
             <div class="tile" style="padding-left:35px;padding-right:35px">
-                <div class="row row-buscar">
-                    <div class="col-md-12 buscar_contribuyente">
-                        <label for="codigo" class="label-control label-text">Buscar Contribuyente</label>
-                        <div class="col-6 input-group mb-2" style="margin-left: -17px;margin-top: -17px;">
-                            <input type="text" class="form-control" id="buscarcodigo" placeholder="Ingresar código"
-                                style=" font-family: 'Saira Stencil One'">
-                            <div class="input-group-prepend ">
-                                <div class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></div>
-                            </div>
-                        </div>
+                <div class="row row-buscar buscar_contribuyente">
+                    <div class="col-12">
+                    <p style="background:rgb(153, 17, 17);color:#fff;paddin-left:5px;border-radius:5px;margin-top:5px;text-align:center;margin-bottom:20px">BUSCAR CONTRIBUYENTE</p>
+                    </div>
+                    <div class="col-md-6 mb-2" style="margin-left: -2px;margin-top: -17px;">
+                        <label for="buscarcodigo"  class="label-control label-text">Ingresar codigo</label>
+                        <input type="text" class="form-control" id="buscarcodigo" maxlength="7" placeholder="Código" style="margin-top:-16px; font-family: 'Saira Stencil One'">
+                    </div>
+                    <div class="col-md-6 " style="margin-left: -17px;margin-top: -17px;">
+                    <label for="buscarcodigo"  class="label-control label-text">Ingresar DNI</label>
+                        <input type="text" class="form-control" id="txt_buscardni" maxlength="11" placeholder="DNI" style="margin-top:-16px;font-family: 'Saira Stencil One'">
                     </div>
                 </div>
                 <div class="row">
@@ -163,11 +164,11 @@
                         <div class="row" style="margin-left:-19px">
                             <div class="col-6">
                                 <label for="recipient-name" class="col-form-label">Celular:</label>
-                                <input type="text" class="form-control" id="txtcelular">
+                                <input type="text" class="form-control" maxlength="8" id="txtcelular">
                             </div>
                             <div class="col-6">
                                 <label for="message-text" class="col-form-label">Telefono:</label>
-                                <input type="text" class="form-control" style="margin-left:-11px;" id="txttelefono">
+                                <input type="text" class="form-control" maxlength="7" style="margin-left:-11px;" id="txttelefono">
                             </div>
                         </div>
                     </div>
@@ -215,7 +216,7 @@
                             </div>
                             <div class="col-2" style="margin-top:28px;margin-left:-27px">
                                 <label for="" class="lable-control"></label>
-                                <button type="button" class="btn-titular" id="btn-titular">TITULAR</button>
+                                <button type="button" class="btn-titular" id="btn-titular-actualizar">TITULAR</button>
                             </div>
                         </div>
                     </div>
@@ -223,11 +224,11 @@
                         <div class="row" style="margin-left:-19px">
                             <div class="col-6">
                                 <label for="recipient-name" class="col-form-label">Celular:</label>
-                                <input type="text" class="form-control" id="txtcelular_actualizar">
+                                <input type="text" class="form-control" maxlength="9" id="txtcelular_actualizar">
                             </div>
                             <div class="col-6">
                                 <label for="message-text" class="col-form-label">Telefono:</label>
-                                <input type="text" class="form-control" style="margin-left:-11px;" id="txttelefono_actualizar">
+                                <input type="text" class="form-control" maxlength="7" style="margin-left:-11px;" id="txttelefono_actualizar">
                             </div>
                         </div>
                     </div>
@@ -256,7 +257,7 @@
 <script src="<?php echo base_url();?>asset/template/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/main.js"></script>
 <script src="<?php echo base_url(); ?>asset/template/js/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/gestion/contacto2.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/gestion/contacto4.js"></script>
 
 </body>
 

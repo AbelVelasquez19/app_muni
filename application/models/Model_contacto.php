@@ -15,6 +15,18 @@ class Model_contacto extends CI_Model {
         }
     }
 
+    public function BuscarDni($dni){
+        $this->db->select('p.CODIGO,p.NOMBRE,p.DOMICILIO_FISCAL');
+        $this->db->from('tb_contribuyentes p');
+        $this->db->where('p.NRODOCUM',$dni);
+        $query = $this->db->get();
+        if($query->num_rows() > 0){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
+
     public function Buscarcontacto($codigo){
         $this->db->select('c.ID,c.TELEFONO,c.CELULAR,c.CORREO');
         $this->db->from('tb_contacto_6 c');
