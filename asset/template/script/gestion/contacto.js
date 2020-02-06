@@ -20,6 +20,7 @@ txt_buscar_codigo.addEventListener("keyup", function(event) {
                 nuevadni = dni.trim();
                 $("#direccion").val(nuevadni);
                 llenartablecontacto();
+                EstadoCuenta();
             } else {
                 Swal.fire('<span>Código de contribuyente no encontrado</span>');
                 $("#codigo").val("");
@@ -54,6 +55,7 @@ buscardni.addEventListener("keyup", function(event) {
                 nuevadni = dni.trim();
                 $("#direccion").val(nuevadni);
                 llenartablecontacto();
+                EstadoCuenta();
             } else {
                 Swal.fire('<span>Código de contribuyente no encontrado</span>');
                 $("#codigo").val("");
@@ -269,3 +271,39 @@ $("#btn-titular-actualizar").click(function() {
     var nombre = $("#nombre").val();
     $("#txtrepresentante_actualizar").val(nombre);
 });
+
+function EstadoCuenta() {
+    var txtcodigo = $("#codigo").val();
+    var urlphp = $("#url1").text();
+    var html = "";
+    var codigo = 1;
+    $.post("" + urlphp + "gestion/Contro_contacto/EstadoCuenta", { txtcodigo: txtcodigo }, function(response) {
+        var datos = JSON.parse(response);
+        var data = datos.EstadoCuenta;
+        if (data) {
+            html += '<tr>' +
+                '<td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años Anteriores</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid; text-align:center">S/. ' + data[0].PRE_AANT + '</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid; text-align:center">S/. ' + data[0].ARB_AANT + '</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid; text-align:center">S/. ' + data[0].DEU_AANT + '</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">S/. ' + data[0].DEU_AANT_CDscto + '</td>' +
+                '</tr>';
+            html += '<tr>' +
+                '<td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años 2020</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid;text-align:center">S/. ' + data[0].PRE_2020 + '</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid;text-align:center">S/. ' + data[0].ARB_2020 + '</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid;text-align:center">S/. ' + data[0].DEU_2020 + '</td>' +
+                '<td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">S/. ' + data[0].DEU_2020_CDscto + '</td>' +
+                '</tr>';
+            html += '<tr style="background:rgb(153, 17, 17);color:#fff;padding-top:0px;text-align:center">' +
+                '<td  scope="row"  style="padding:4px;border:2px #A21F12 solid">TOTAL</td>' +
+                '<td  style="border:2px #A21F12 solid">S/. ' + data[0].PRED_TOT + '</td>' +
+                '<td  style="border:2px #A21F12 solid">S/. ' + data[0].ARB_TOT + '</td>' +
+                '<td  style="border:2px #A21F12 solid">S/. ' + data[0].DEU_TOTAL_SDscto + '</td>' +
+                '<td  style="border:2px #A21F12 solid;text-align:center;">S/. ' + data[0].DEU_TOTAL_CDscto + '</td>' +
+                '</tr>';
+        }
+
+        $("#tableestadocuenta").html(html);
+    });
+}

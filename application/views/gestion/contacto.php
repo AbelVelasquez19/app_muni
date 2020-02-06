@@ -93,28 +93,8 @@
                                     <th scope="col" >CON DESC</th>
                                 </tr>
                             </thead>
-                            <tbody id="tablecontacto">
-                                <tr>
-                                    <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años Anteriores</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">45.4</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">56.2</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">23.2</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">656.5</td>
-                                </tr>
-                                <tr>
-                                    <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años 2020</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">56.5</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">65.2</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">131.3</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">56.56</td>
-                                </tr>
-                                <tr>
-                                    <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">TOTAL</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">525.32</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">23.225</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid">56.5</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">56.56</td>
-                                </tr>
+                            <tbody id="tableestadocuenta">
+                                
                             </tbody>
                         </table>
                     </div>
@@ -296,7 +276,7 @@
 <script src="<?php echo base_url();?>asset/template/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/main.js"></script>
 <script src="<?php echo base_url(); ?>asset/template/js/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/gestion/contacto4.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/gestion/contacto.js"></script>
 
 </body>
 

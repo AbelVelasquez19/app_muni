@@ -93,6 +93,13 @@ class Contro_contacto extends CI_Controller {
 		echo $mensaje;
     }
 
+	public function EstadoCuenta(){
+		$codigo = $this->input->post('txtcodigo');
+        $data = array(
+            "EstadoCuenta"=>$this->Model_contacto->EstadoCuentas($codigo),
+        );
+		echo json_encode($data);
+	}	
 }    
 
 

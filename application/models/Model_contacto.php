@@ -70,5 +70,17 @@ class Model_contacto extends CI_Model {
             return false;
         }
     }
+
+    public function EstadoCuentas($codigo){
+        $this->db->select('FACODCONTR,PRE_AANT,ARB_AANT,DEU_AANT,PRE_2020,ARB_2020,DEU_2020,PRED_TOT,ARB_TOT,DEU_TOTAL_SDscto,DEU_AANT_CDscto,DEU_2020_CDscto,DEU_TOTAL_CDscto');
+        $this->db->from('Beneficio_feb');
+        $this->db->where('FACODCONTR',$codigo);
+        $query = $this->db->get();
+        if($query->num_rows() > 0){
+            return $query->result();
+        }else{
+            return false;
+        }
+    }
 } 
  
