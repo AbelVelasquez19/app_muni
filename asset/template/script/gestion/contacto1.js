@@ -83,7 +83,8 @@ function llenartablecontacto() {
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].TELEFONO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].CORREO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid;text-align:center;'>" +
-                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" + "</td>"
+                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" + "</td>" +
+                    "<button class='btn-editar' type='button' onclick='eliminar(" + data[index].ID + ")'><i class='fa fa-trash-o' aria-hidden='true'></i></button>" + "</td>"
                 "</tr>";
             }
             $("#tablecontacto").html(html);
@@ -111,7 +112,8 @@ $("#btn_refresh").click(function() {
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].TELEFONO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].CORREO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid;text-align:center;'>" +
-                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" + "</td>"
+                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" + "</td>" +
+                    "<button class='btn-editar' type='button' onclick='eliminar(" + data[index].ID + ")'><i class='fa fa-trash-o' aria-hidden='true'></i></button>" + "</td>"
                 "</tr>";
             }
             $("#tablecontacto").html(html);
