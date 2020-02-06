@@ -150,8 +150,6 @@
             </div>
         </div>
     </div>
-
-
 </main>
 
 <!-- modal de registro -->
@@ -275,8 +273,8 @@
 <script src="<?php echo base_url();?>asset/template/js/popper.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/main.js"></script>
-<script src="<?php echo base_url(); ?>asset/template/js/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/gestion/contacto1.js"></script>
+<script src="<?php echo base_url();?>asset/template/js/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/gestion/contacto10.js"></script>
 
 </body>
 
