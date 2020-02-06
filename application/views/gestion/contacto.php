@@ -46,14 +46,14 @@
             <div class="tile" style="padding-left:35px;padding-right:35px">
                 <div class="row row-buscar buscar_contribuyente">
                     <div class="col-12">
-                    <p style="background:rgb(153, 17, 17);color:#fff;paddin-left:5px;border-radius:5px;margin-top:5px;text-align:center;margin-bottom:20px">BUSCAR CONTRIBUYENTE</p>
+                        <p style="background:rgb(153, 17, 17);color:#fff;paddin-left:5px;border-radius:5px;margin-top:5px;text-align:center;margin-bottom:20px">BUSCAR CONTRIBUYENTE</p>
                     </div>
                     <div class="col-md-6 mb-2" style="margin-left: -2px;margin-top: -17px;">
                         <label for="buscarcodigo"  class="label-control label-text">Ingresar codigo</label>
                         <input type="text" class="form-control" id="buscarcodigo" maxlength="7" placeholder="Código" style="margin-top:-16px; font-family: 'Saira Stencil One'">
                     </div>
                     <div class="col-md-6 " style="margin-left: -17px;margin-top: -17px;">
-                    <label for="buscarcodigo"  class="label-control label-text">Ingresar DNI</label>
+                        <label for="buscarcodigo"  class="label-control label-text">Ingresar DNI</label>
                         <input type="text" class="form-control" id="txt_buscardni" maxlength="11" placeholder="DNI" style="margin-top:-16px;font-family: 'Saira Stencil One'">
                     </div>
                 </div>
@@ -78,6 +78,45 @@
                                     placeholder="dirección del contribuyente" name="direccion" id="direccion">
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-2 buscar_contribuyente">
+                    <p style="background:rgb(153, 17, 17);color:#fff;paddin-left:5px;border-radius:5px;margin-top:5px;text-align:center;margin-bottom:10px">ESTADO DE CUENTA DE CONTRIBUYENTE</p>
+                        <table class="table-personalizado" style="margin-top:5px;margin-bottom:5px">
+                            <thead>
+                                <tr class="titulo-table text-center">
+                                    <th scope="col" style="width:20px">CONCEPTO</th>
+                                    <th scope="col">PREDIAL</th>
+                                    <th scope="col">ARBITRIOS</th>
+                                    <th scope="col">SIN DESC</th>
+                                    <th scope="col" >CON DESC</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tablecontacto">
+                                <tr>
+                                    <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años Anteriores</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">454</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">562</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">232</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">6565</td>
+                                </tr>
+                                <tr>
+                                    <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años 2020</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">565</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">652</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">1313</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">5656</td>
+                                </tr>
+                                <tr>
+                                    <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">TOTAL</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">3131</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">2365</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid">565</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">5656</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
