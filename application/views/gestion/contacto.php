@@ -113,7 +113,7 @@
                                     <td  style="padding:4px; border:2px #A21F12 solid">525.32</td>
                                     <td  style="padding:4px; border:2px #A21F12 solid">23.225</td>
                                     <td  style="padding:4px; border:2px #A21F12 solid">56.5</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">5656</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">56.56</td>
                                 </tr>
                             </tbody>
                         </table>
