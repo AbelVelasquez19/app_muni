@@ -99,7 +99,7 @@
                                     <td  style="padding:4px; border:2px #A21F12 solid">45.4</td>
                                     <td  style="padding:4px; border:2px #A21F12 solid">56.2</td>
                                     <td  style="padding:4px; border:2px #A21F12 solid">23.2</td>
-                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">6565</td>
+                                    <td  style="padding:4px; border:2px #A21F12 solid;text-align:center;">656.5</td>
                                 </tr>
                                 <tr>
                                     <td  scope="row"  style="padding:4px;border:2px #A21F12 solid">Años 2020</td>
