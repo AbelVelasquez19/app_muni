@@ -83,9 +83,10 @@ function llenartablecontacto() {
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].TELEFONO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].CORREO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid;text-align:center;'>" +
-                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" + "</td>" +
-                    "<button class='btn-eliminar' type='button' onclick='eliminar(" + data[index].ID + ")'><i class='fa fa-trash-o' aria-hidden='true'></i></button>" + "</td>"
-                "</tr>";
+                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" +
+                    "<button class='btn-editar' type='button' onclick='eliminar(" + data[index].ID + ")'><i class='fa fa-trash' aria-hidden='true'></i></button>" +
+                    "</td>" +
+                    "</tr>";
             }
             $("#tablecontacto").html(html);
             $("#mensajetable").html("");
@@ -111,10 +112,11 @@ $("#btn_refresh").click(function() {
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].CELULAR + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].TELEFONO + "</td>" +
                     "<td  style='padding:4px; border:2px #A21F12 solid'>" + data[index].CORREO + "</td>" +
-                    "<td  style='padding:4px; border:2px #A21F12 solid;text-align:center;'>" +
-                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" + "</td>" +
-                    "<button class='btn-eliminar' type='button' onclick='eliminar(" + data[index].ID + ")'><i class='fa fa-trash-o' aria-hidden='true'></i></button>" + "</td>"
-                "</tr>";
+                    "<td  style='padding:1px; border:2px #A21F12 solid;text-align:center;'>" +
+                    "<button class='btn-editar' type='button' onclick='editar(" + data[index].ID + ")' data-toggle='modal' data-target='#ModalActuaizar'><i class='fa fa-pencil-square fa-1x' aria-hidden='true'></i></button>" +
+                    "<button class='btn-editar' type='button' onclick='eliminar(" + data[index].ID + ")'><i class='fa fa-trash' aria-hidden='true'></i></button>" +
+                    "</td>" +
+                    "</tr>";
             }
             $("#tablecontacto").html(html);
             $("#mensajetable").html("");
@@ -127,6 +129,7 @@ $("#btn_refresh").click(function() {
 
 function init() {
     $("#mensajetable").html("Buscar Contribuyente");
+    $("#buscarcodigo").focus();
 }
 
 init();
@@ -187,6 +190,13 @@ function editar(codigo) {
         $("#txtcodigo_actualizar").val(data[0].CODIGO);
 
 
+    });
+}
+
+function eliminar(codigo) {
+    var urlphp = $("#url1").text();
+    $.post("" + urlphp + "gestion/Contro_contacto/EliminarContacto", { codigo: codigo }, function(response) {
+        llenartablecontacto();
     });
 }
 

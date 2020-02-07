@@ -82,5 +82,15 @@ class Model_contacto extends CI_Model {
             return false;
         }
     }
+
+    public function ElimnarContacto($codigo){
+        $this->db->where('ID',$codigo);
+        $this->db->delete('tb_contacto_6');
+        if($this->db->affected_rows()>0){
+            return true;
+        }else{
+            return false;
+        }
+    }
 } 
  

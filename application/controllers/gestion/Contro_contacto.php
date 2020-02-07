@@ -99,7 +99,18 @@ class Contro_contacto extends CI_Controller {
             "EstadoCuenta"=>$this->Model_contacto->EstadoCuentas($codigo),
         );
 		echo json_encode($data);
-	}	
+	}
+	
+	public function EliminarContacto(){
+		$ID = $this->input->post("codigo");
+		$mensaje = "";
+		if($this->Model_contacto->ElimnarContacto($ID)==true){
+			$mensaje .="<span class='mensajeregistro texto_mensaje' id='text_mesajes'>Se elimino correctamente </span>";
+		}else{
+			$mensaje .="<span class='mensajeregistro texto_mensaje' id='text_mesajes'>Error al eliminar </span>";
+		}
+		echo $mensaje;
+	}
 }    
 
 

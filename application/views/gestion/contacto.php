@@ -30,8 +30,7 @@
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css"
-        href="<?php echo base_url(); ?>asset/template/js/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>asset/template/js/sweetalert2/dist/sweetalert2.min.css">
 </head>
 <?php
     $url= base_url();
@@ -120,7 +119,7 @@
                                     <th scope="col">CELULAR</th>
                                     <th scope="col">TELEFONO</th>
                                     <th scope="col">CORREO</th>
-                                    <th scope="col" style="text-align:center;width:30px">OPCIÓN</th>
+                                    <th scope="col" style="text-align:center;width:10%">OPCIÓN</th>
                                 </tr>
                             </thead>
                             <tbody id="tablecontacto">
@@ -274,7 +273,7 @@
 <script src="<?php echo base_url();?>asset/template/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/main.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/gestion/contacto10.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/gestion/contacto.js"></script>
 
 </body>
 
