@@ -100,14 +100,39 @@ function listar_asistencia() {
             var i;
             var datos = JSON.parse(data);
             for (i = 0; i < datos.length; i++) {
-                html += '<div class="col-sm-12 col-md-12 col-lg-1 col-xl-1 colms_faltas">' +
-                    '<div class="card card_faltas">' +
-                    '<img src="' + urlphp + 'asset/template/img/Perfil/' + datos[i].Fot_personal + '" class="card-img-top" alt="...">' +
+                html += '<div class="col-sm-5 col-md-5 col-lg-2 col-xl-2 colms_faltas">' +
+                    '<div class="card card_asistencia">' +
+                    '<img src="' + urlphp + 'asset/template/img/Perfil/' + datos[i].Fot_personal + '" class="card-img-top imagen-asistencia" alt="...">' +
                     '<i class="fa fa-check-square icon_asistencia" aria-hidden="true"></i>' +
                     '</div>' +
                     '</div>';
             }
             $("#html_asistencia").html(html);
+        },
+        error: function() {
+            alert("no hay datos en el servidor");
+        }
+    });
+}
+
+function listar_tardanza() {
+    var urlphp = $("#url").text();
+    $.ajax({
+        type: 'post',
+        url: urlphp + 'Contro_asistencia/Listar_Tardanza',
+        success: function(data) {
+            var html = "";
+            var i;
+            var datos = JSON.parse(data);
+            for (i = 0; i < datos.length; i++) {
+                html += '<div class="col-sm-5 col-md-5 col-lg-2 col-xl-2 colms_faltas">' +
+                    '<div class="card card_asistencia">' +
+                    '<img src="' + urlphp + 'asset/template/img/Perfil/' + datos[i].Fot_personal + '" class="card-img-top" alt="...">' +
+                    '<i class="fa fa-check-square icon_asistencia" aria-hidden="true"></i>' +
+                    '</div>' +
+                    '</div>';
+            }
+            $("#html_tardanza").html(html);
         },
         error: function() {
             alert("no hay datos en el servidor");
@@ -358,6 +383,7 @@ $("#desbloquiarlink").click(function(e) {
 function init() {
     listar_asistencia();
     listar_faltas();
+    listar_tardanza();
     DesabiBtn();
     $("#txt_numero_personal").focus();
     var urlphp = $("#url").text();

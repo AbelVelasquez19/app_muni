@@ -41,7 +41,7 @@
         <div class="col-md-12">
             <div class="tile">
                 <div class="embed-responsive embed-responsive-16by1" id="contenidorcoluma" style="height: 600px">
-                    <div class="embed-responsive-item" id="reporte2020s"></div>
+                    <div class="embed-responsive-item" id="ContainerColumna2020"></div>
                 </div>
             </div>
             <div class="tile">
@@ -64,4 +64,4 @@
 <!-- <script src="asset/template/js/highcharts/highcharts-more.js"></script>-->
 <script src="<?php echo base_url();?>asset/template/js/highcharts/exporting.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/highcharts/export-data.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/Rptcampana2020.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/Rptcampana20202.js"></script>

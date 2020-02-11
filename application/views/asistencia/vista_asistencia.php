@@ -22,7 +22,7 @@
     <!-- Font-icon css-->
     <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>asset/template/font-awesome-4.7.0/css/font-awesome.min.css">
     <!-- css para asistencia-->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>asset/template/css/asistencia.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>asset/template/css/asistencia1.css">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
     <!-- font para reloj-->
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-4">
             <div class="tile" style="padding: 0px;">
                 <div class="header_asistencia">
                     <span>ASISTENCIA</span>
@@ -59,6 +59,18 @@
                 <div class="contenido_asistencia">
                     <div class="row" id="html_asistencia">                                                                       
                         <!-- recuperando los datos de javascript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="tile" style="padding: 0px">
+            <div class="header_faltas">
+                    <span>TARDANZAS</span>
+                </div>
+                <div class="contenido_faltas">
+                    <div class="row" id="html_tardanza">
+                                                                                                    
                     </div>
                 </div>
             </div>
@@ -162,6 +174,6 @@
 <script src="<?php echo base_url();?>asset/template/js/popper.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/bootstrap.min.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/main.js"></script>
-<script src="<?php echo base_url();?>asset/template/js/asistencias2.js"></script>
+<script src="<?php echo base_url();?>asset/template/js/asistencias.js"></script>
 </body>
 </html>

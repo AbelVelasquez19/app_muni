@@ -80,6 +80,7 @@ function reca_x_punto() {
 
 }
 
+
 function init() {
     reca_x_punto();
 };

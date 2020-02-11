@@ -74,6 +74,7 @@ class Model_reporte extends CI_Model {
                 return false;
             }
         }
+
          //reporte por fecha y zona del campaña Gat
          public function  Rrp_FECHA2020(){
             $this->db->select("REPLACE(FE_LETRA,' 2020','') AS FE_LETRA,Pt1_recaudacion,Pt2_recaudacion,COLORSE,Sc1_recaudacion,Sc2_recaudacion");
@@ -87,6 +88,7 @@ class Model_reporte extends CI_Model {
                 return false;
             }
         }
+        
         //reporte generando el total recaudado de la campaña Gat
         public function Total_RecaudadoCam(){
             $this->db->select("FORMAT(SUM(Sc1_recaudacion) + SUM(Sc2_recaudacion),2) as Total_recaudado");

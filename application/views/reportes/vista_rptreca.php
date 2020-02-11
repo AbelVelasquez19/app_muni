@@ -60,4 +60,4 @@
 <!-- <script src="asset/template/js/highcharts/highcharts-more.js"></script>-->
 <script src="<?php echo base_url();?>asset/template/js/highcharts/exporting.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/highcharts/export-data.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/Rrpcampana2020.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/Rrpcampana.js"></script>
