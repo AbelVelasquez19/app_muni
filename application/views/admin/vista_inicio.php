@@ -66,7 +66,7 @@
 <!-- <script src="asset/template/js/highcharts/highcharts-more.js"></script>-->
 <script src="<?php echo base_url();?>asset/template/js/highcharts/exporting.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/highcharts/export-data.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/recaudacion/rptrecaudacion.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/recaudacion/rptrecaudacion1.js"></script>
 
 </body>
 </html>

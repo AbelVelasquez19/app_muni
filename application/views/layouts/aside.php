@@ -43,7 +43,7 @@
         <li class="treeview"><a class="app-menu__item" href="#" data-toggle="treeview"><i class="app-menu__icon fa fa-file-text"></i><span class="app-menu__label">Reportes</span><i class="treeview-indicator fa fa-angle-right"></i></a>
             <ul class="treeview-menu">
                 <li><a class="treeview-item" href="<?php echo base_url();?>reportes/Contro_rptreca"  rel="noopener"><i class="icon fa fa-bar-chart"></i> Reporte Recaudacion 2019</a></li>
-                <li><a class="treeview-item" href="<?php echo base_url();?>reportes/Contro_rptreca"  rel="noopener"><i class="icon fa fa-bar-chart"></i> Reporte Recaudacion 2020</a></li>
+                <li><a class="treeview-item" href="<?php echo base_url();?>reportes/Contro_rptrecault"  rel="noopener"><i class="icon fa fa-bar-chart"></i> Reporte Recaudacion 2020</a></li>
             </ul>
         </li>
     </ul>

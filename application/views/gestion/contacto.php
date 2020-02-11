@@ -180,7 +180,7 @@
                         <div class="row" style="margin-left:-19px">
                             <div class="col-6">
                                 <label for="recipient-name" class="col-form-label">Celular:</label>
-                                <input type="text" class="form-control" maxlength="8" id="txtcelular">
+                                <input type="text" class="form-control" maxlength="9" id="txtcelular">
                             </div>
                             <div class="col-6">
                                 <label for="message-text" class="col-form-label">Telefono:</label>

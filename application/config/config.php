@@ -24,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
   //$config['base_url'] = 'http://appmuni.softwsolution.com/app_muni/';
-  $config['base_url'] = 'http://192.168.25.7/app_muni/';
+  //$config['base_url'] = 'http://localhost/app_muni/';
 /*
 |--------------------------------------------------------------------------
 | Index File

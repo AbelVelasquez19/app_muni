@@ -5,7 +5,7 @@ function reca_x_punto() {
             renderTo: 'reca_x_punto',
         },
         title: {
-            text: 'RECAUDACÓN POR DIA - CAMPAÑA GAT'
+            text: 'RECAUDACIÓN POR DÍA - CAMPAÑA GAT'
         },
         subtitle: {
             text: ''
@@ -67,7 +67,7 @@ function reca_x_punto() {
                 color: "#8DFF33 "
             };
             var objeto2 = {
-                text: 'Total S/. ' + datos[index].TOTAL
+                text: 'Total S/. ' + parseFloat(datos[index].TOTAL, 2)
             };
             option.series[0].data.push(objeto);
             option.series[0].data.push(objeto1);

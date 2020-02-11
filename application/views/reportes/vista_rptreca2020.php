@@ -29,6 +29,10 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rakkas&display=swap" rel="stylesheet">
 </head>
+<?php
+    $url= base_url();
+    echo '<p id="url1" style="display:none">'.$url.'</p>';
+?>
 <!-- se incluyo body y header en archivo views/admin/layouts/header.php-->
 <!-- Sidebar menu-->
 <!-- aside en archivo views/admin/layouts/header.php-->
@@ -37,12 +41,12 @@
         <div class="col-md-12">
             <div class="tile">
                 <div class="embed-responsive embed-responsive-16by1" id="contenidorcoluma" style="height: 600px">
-                    <div class="embed-responsive-item" id="ContainerColumna"></div>
+                    <div class="embed-responsive-item" id="reporte2020s"></div>
                 </div>
             </div>
             <div class="tile">
                 <div class="embed-responsive embed-responsive-16by1" id="contenidorgrafico" style="height: 500px">
-                     <div class="embed-responsive-item" id="containerlineal"></div>
+                     <div class="embed-responsive-item" id="reporte2020"></div>
               </div>
             </div>
         </div>
@@ -60,4 +64,4 @@
 <!-- <script src="asset/template/js/highcharts/highcharts-more.js"></script>-->
 <script src="<?php echo base_url();?>asset/template/js/highcharts/exporting.js"></script>
 <script src="<?php echo base_url();?>asset/template/js/highcharts/export-data.js"></script>
-<script src="<?php echo base_url();?>asset/template/script/Rrpcampana2020.js"></script>
+<script src="<?php echo base_url();?>asset/template/script/Rptcampana2020.js"></script>
